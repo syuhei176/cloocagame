@@ -15,8 +15,14 @@ Player.prototype.step = function() {
 	var self = this;
 	this.stm.sendEvent(0);
 	//event
-	$("canvas").draw(function(ctx) {
-		var image = ctx.getImageData(0,0,640,640);
+    
+    $("canvas").drawImage({
+        source: "/static/images/game/car01.png",
+        x: this.x, y: this.y
+    });
+    $("canvas").draw(function(ctx){
+        var image = ctx.getImageData(0,0,640,640);
+        
 		var r = image.data[(Math.floor(self.x) + 640 * Math.floor(self.y)) * 4 + 0];
 		var g =image.data[(Math.floor(self.x) + 640 * Math.floor(self.y)) * 4 + 1];
 		var b =image.data[(Math.floor(self.x) + 640 * Math.floor(self.y)) * 4 + 2];
