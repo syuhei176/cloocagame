@@ -1,6 +1,3 @@
-/*
- clooca basic style sheet
-*/
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
 	display: block
 }
@@ -174,7 +171,8 @@ table {
 .wrapper {
 	margin: 0 auto;
 	padding: 0 6.25%;
-	max-width: 1008px
+	max-width: 1008px;
+	text-align:left;
 }
 .wrapper.centered {
 	max-width: 432px
@@ -251,15 +249,15 @@ html, button, input, select, textarea {
 	font-feature-settings: "liga", "dlig"
 }
 input[type="text"], input[type="email"], input[type="password"] {
-	background-color: #e6eae8;
+	/*background-color: #e6eae8;*/
 	border: 0;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	font-size: 30px;
+	/*font-size: 30px;
 	font-weight: 300;
-	margin-bottom: 36px;
-	padding: 10px 20px 5px
+	margin-bottom: 36px;*/
+	padding: 10px 10px;
 }
 button, .button {
 	display: inline-block;
@@ -270,6 +268,9 @@ button, .button {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none
+}
+.buttonfb {
+	background-color: #3b5998;
 }
 button span, button del, .button span, .button del {
 	padding-right: 0.5em
@@ -1206,4 +1207,22 @@ pre .deletion {
 }
 pre .tex .formula {
 	background: #073642
+}
+
+.inputForm{
+	padding:100px 50px;
+}
+
+.inputForm table {
+	width: 500px;
+	margin-left:auto;
+	margin-right:auto
+}
+.inputForm table th{
+	width: 150px;
+	text-align: right;
+}
+.inputForm table td{
+	text-align:left;
+	padding-left: 40px;
 }

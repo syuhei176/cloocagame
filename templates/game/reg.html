@@ -1,12 +1,12 @@
-<!DOCTYPE  html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>clooca game - 新規登録</title>
-		<link href="/static/css/game/style.css" rel="stylesheet">
-		<link href="/static/css/ui-darkness/jquery-ui-1.8.18.custom.css" rel="stylesheet">
+<!DOCTYPE html>
+<html class='no-js'>
+<head>
+    <meta charset='UTF-8' />
+    <title>clooca game　新規登録</title>
+    <meta content='width=device-width' name='viewport' />
+    <link href='/static/css/game/style.css' rel='stylesheet' />
+    <script src='/static/js/modernizr.js'></script>
 		<script src="/static/js/jquery-1.7.1.min.js"></script>
-		<script src="/static/js/jquery-ui-1.8.18.custom.min.js"></script>
 		<script type="text/javascript">
 			$(function(){
 				// hide messages 
@@ -73,27 +73,78 @@
 				});
 			});
 		</script>
-	</head>
-	<body>
-	<div id="wrapper">
-		<div id="header">
-		</div>
-		<div id="main">
-			<div>
-			<form id="reg-form" action="/reg-to" method="post">
-			<fieldset>
-			<div>メールアドレス<input type="text" name="email" id="email" /></div>
-			<div>ユーザ名<input type="text" name="uname" id="uname" /></div>
-			<div>パスワード<input type="password" name="passwd" id="passwd" /></div>
-			<div>パスワード<input type="password" name="confirm-passwd" id="confirm-passwd" /></div>
-			<input id="submit" name="submit" type="submit" value="ログイン" />
-			</fieldset>
+  </head>
+<body class="index">
+<div class='container'>
+      <header>
+        <div class='wrapper'>
+          <a class='symbolset-logo' href='/'>
+          <img alt='clooca game' src='/static/images/game/clooca_logo_1.png' />
+          </a> 新規登録<br>
+          <nav class="right">
+          	<a href='/reg'>新規登録</a>
+          	<a href='/login'>ログイン</a>
+          </nav>
+        </div>
+      </header>
+	  <section class="wrapper">
+      	<div class='promo'>
+        	<div class="inputForm">
+        	  <form id="reg-form" name="form1" method="post" action="/reg-to">
+            	<table border="0" cellpadding="10" cellspacing="10">
+            	  <tr>
+            	    <th>メールアドレス
+            	      </td>
+          	      <td><input name="email" type="text" id="userid2" tabindex="1" size="25"></td>
+          	    </tr>
+                  <tr>
+                    <th>ユーザ名</td>
+                    <td><input name="uname" type="text" id="userid" tabindex="2" size="25"></td>
+                  </tr>
+                  <tr>
+                    <th>パスワード</td>
+                    <td><input name="passwd" type="password" id="passed" tabindex="3" size="25"></td>
+                  </tr>
+                  <tr>
+                    <th>パスワード確認&nbsp;</td>
+                    <td><input name="confirm-passwd" type="password" id="passed2" tabindex="4" size="25"></td>
+                  </tr>
+                  <tr>
+                    <th>                  
+                    <td><input type="submit" name="button" id="button" class="button" value="登録" tabindex="5" style="width:245px;"></td>
+                  </tr>
+                  <tr>
+                    <th>                  
+                    <td><input type="submit" name="buttonfb" id="buttonfb" class="button buttonfb" value="facebookでログイン" tabindex="4" style="width:245px;"></td>
+                  </tr>
+                </table>
 			<div id="error"></div>
-			</form>
+              </form>
 			<div id="success"></div>
-			</div>
-		</div>
-		<div id="footer"></div>
-	</div>
-	</body>
+          </div>
+        </div>
+      </section>
+</div> <!-- end .container -->
+  <footer>
+      <div class='wrapper'>
+        <nav>
+          <ul>
+            <li>clooca</li>
+            <li>
+              <a href='/policy'>Privacy Policy</a>
+            </li>
+            <li>
+              <a href='mailto:syuhei176@gmail.com'>Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class='copyright'>
+          <span>
+            Copyright &copy; 2012
+          <a href='http://technicalrockstars.co.jp/' target='_blank'>株式会社Technical Rockstars All Rights Reserved.</a>
+          </span>
+        </div>
+      </div>
+</footer>
+</body>
 </html>

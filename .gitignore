@@ -27,3 +27,6 @@ pip-log.txt
 .mr.developer.cfg
 /.settings
 /config.py
+/log.txt
+/.pydevproject
+/.project
